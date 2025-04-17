@@ -84,6 +84,11 @@ export default function Contact() {
                             {errors.msg && <p className="help is-danger">{errors.msg}</p>}
                         </div>
             
+                        <div className="control has-text-centered">
+                            <button className="button is-primary is-rounded" type="submit">
+                                Submit
+                            </button>
+                        </div>
                         
                     </form>
                 </article>
