@@ -17,5 +17,19 @@ export default function Gallery() {
         if (!formData.msg.trim()) newErrors.msg = 'Message is required.';
         return newErrors;
     };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const validationErrors = validate();
+        if (Object.keys(validationErrors).length > 0) {
+          setErrors(validationErrors);
+          return;
+        }
+  
+        alert('Form submitted successfully!');
+  
+        // Submit logic here (e.g. send to backend)
+        console.log('Form submitted:', formData);
+      };
     
 }
