@@ -10,7 +10,7 @@ import Home from './components/Home';
 import Footer from './components/Footer';
 
 function App() {
-  
+
   const [socialLinks] = useState([
     { icon: "fab fa-twitter", href: "https://twitter.com" },
     { icon: "fab fa-facebook", href: "https://facebook.com" },
@@ -26,6 +26,7 @@ function App() {
         <Route path="/" element={<h1>Home Page</h1>} />
         <Route path="/about" element={<About />} />
       </Routes>
+      <Footer links={socialLinks} year={currentYear} />
     </Router>
   );
 }
