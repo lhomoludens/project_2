@@ -17,6 +17,12 @@ function App() {
     { title: "Berlin", image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Berlin" },
   ]);
 
+  const [destinationCards] = useState([
+    { text: "Rest on the beautiful beaches of Bali.", image: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=2070&auto=format&fit=crop", alt: "Bali" },
+    { text: "Explore the romantic streets of Paris.", image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=2073&auto=format&fit=crop", alt: "Paris" },
+    { text: "Experience the vibrant life of Tokyo.", image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=2094&auto=format&fit=crop", alt: "Tokyo" },
+  ]);
+
   const [socialLinks] = useState([
     { icon: "fab fa-twitter", href: "https://twitter.com" },
     { icon: "fab fa-facebook", href: "https://facebook.com" },
