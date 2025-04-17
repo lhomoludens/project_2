@@ -10,6 +10,14 @@ import Home from './components/Home';
 import Footer from './components/Footer';
 
 function App() {
+  
+  const [socialLinks] = useState([
+    { icon: "fab fa-twitter", href: "https://twitter.com" },
+    { icon: "fab fa-facebook", href: "https://facebook.com" },
+    { icon: "fab fa-instagram", href: "https://instagram.com" },
+  ]);
+
+  const currentYear = new Date().getFullYear();
   return (
     <Router>
       <HeroHeader />
