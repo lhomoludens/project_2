@@ -70,6 +70,20 @@ export default function Contact() {
                             {errors.email && <p className="help is-danger">{errors.email}</p>}
                         </div>
             
+                        <div className="field">
+                            <label className="label">Message</label>
+                            <div className="control">
+                                <textarea
+                                className="textarea"
+                                placeholder="Your Message"
+                                id="msg"
+                                value={formData.msg}
+                                onChange={handleChange}
+                                />
+                            </div>
+                            {errors.msg && <p className="help is-danger">{errors.msg}</p>}
+                        </div>
+            
                         
                     </form>
                 </article>
