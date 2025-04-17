@@ -70,6 +70,35 @@ const Home = ({ homeCards, destinationCards, tourCards }) => {
           </article>
         </div>
       </section>
+
+      <section id="tours" className="tour-section">
+        <div className="container mt-6">
+          <h4 className="title is-size-4 has-text-centered mb-5">
+            Our Tours
+          </h4>
+          <p className="subtitle is-size-6 has-text-centered mb-5">
+            Check out our amazing travel packages.
+          </p>
+          <article className="columns mt-5 is-8 is-variable">
+            {tourCards.map((item, index) => (
+              <div className="column is-1-tablet is-4-desktop" key={index}>
+                <div className="card">
+                  <div className="card-image">
+                    <figure className="image is-4by3">
+                      <img src={item.image} alt={item.alt} />
+                    </figure>
+                  </div>
+                  <div className="card-content">
+                    <p className="title is-size-5 has-text-centered pb-2">
+                      {item.title}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </article>
+        </div>
+      </section>
       </>
     );
   };
