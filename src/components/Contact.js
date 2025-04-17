@@ -39,6 +39,23 @@ export default function Contact() {
                     <p className="subtitle has-text-centered is-size-6 mt-3">
                         Get in touch with us for inquiries and bookings.
                     </p>
+                    <form onSubmit={handleSubmit}>
+                        <div className="field">
+                            <label className="label">Name</label>
+                            <div className="control">
+                                <input
+                                className="input"
+                                type="text"
+                                placeholder="Your Name"
+                                id="name"
+                                value={formData.name}
+                                onChange={handleChange}
+                                />
+                            </div>
+                            {errors.name && <p className="help is-danger">{errors.name}</p>}
+                        </div>
+            
+                    </form>
                 </article>
             </section>     
         )
