@@ -55,6 +55,22 @@ export default function Contact() {
                             {errors.name && <p className="help is-danger">{errors.name}</p>}
                         </div>
             
+                        <div className="field">
+                            <label className="label">Email</label>
+                            <div className="control">
+                                <input
+                                className="input"
+                                type="email"
+                                placeholder="Your Email"
+                                id="email"
+                                value={formData.email}
+                                onChange={handleChange}
+                                />
+                            </div>
+                            {errors.email && <p className="help is-danger">{errors.email}</p>}
+                        </div>
+            
+                        
                     </form>
                 </article>
             </section>     
