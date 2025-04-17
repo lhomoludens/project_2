@@ -23,6 +23,12 @@ function App() {
     { text: "Experience the vibrant life of Tokyo.", image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=2094&auto=format&fit=crop", alt: "Tokyo" },
   ]);
 
+  const [tourCards] = useState([
+    { title: "Adventure Tours", image: "https://images.unsplash.com/photo-1585919269458-6259dfe9f21a?q=80&w=1932&auto=format&fit=crop", alt: "Adventure" },
+    { title: "Luxurious Tours", image: "https://images.unsplash.com/photo-1730190201006-355592e26833?q=80&w=2070&auto=format&fit=crop", alt: "Luxury" },
+    { title: "City Tours", image: "https://images.unsplash.com/photo-1724919093219-42cede15832e?q=80&w=1932&auto=format&fit=crop", alt: "City" },
+  ]);
+  
   const [socialLinks] = useState([
     { icon: "fab fa-twitter", href: "https://twitter.com" },
     { icon: "fab fa-facebook", href: "https://facebook.com" },
