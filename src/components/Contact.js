@@ -32,6 +32,8 @@ export default function Contact() {
   
         console.log('Form submitted:', formData);
 
+    }
+
         return (
             <section id="contact" className="contact-section">
                 <article className="container mt-6">
@@ -94,7 +96,7 @@ export default function Contact() {
                 </article>
             </section>     
         )
-      };
+    
     
 }
 
