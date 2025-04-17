@@ -23,7 +23,9 @@ const Footer = ({ links, year }) => {
                 <i className={`${link.icon} fa-2x has-text-blue`}></i>
               </a>
             ))}
-    
+        <p className="mt-4 has-text-white">
+          &copy; {year} YCS Travel Agency. All rights reserved.
+        </p>
           </div>
         </footer>
       );
