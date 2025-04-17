@@ -1,5 +1,9 @@
-import logo from './logo.svg';
+import React from 'react';
+import HeroHeader from './components/HeroHeader';
+import Navbar from './components/Navbar';
+import About from './components/About';
 import './App.css';
+import 'bulma/css/bulma.min.css'
 
 function App() {
   return (
