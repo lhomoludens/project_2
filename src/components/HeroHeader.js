@@ -14,3 +14,5 @@ const HeroHeader = () => {
         </header>
     );
 };
+
+export default HeroHeader;
