@@ -11,6 +11,12 @@ import Footer from './components/Footer';
 
 function App() {
 
+  const [homeCards] = useState([
+    { title: "London", image: "https://images.unsplash.com/photo-1592345279419-959d784e8aad?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "London Bridge" },
+    { title: "Norway", image: "https://images.unsplash.com/photo-1593291619462-e4240344ea21?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Norway Auroras" },
+    { title: "Berlin", image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Berlin" },
+  ]);
+
   const [socialLinks] = useState([
     { icon: "fab fa-twitter", href: "https://twitter.com" },
     { icon: "fab fa-facebook", href: "https://facebook.com" },
