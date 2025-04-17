@@ -30,8 +30,18 @@ export default function Contact() {
   
         alert('Form submitted successfully!');
   
-        // Submit logic here (e.g. send to backend)
         console.log('Form submitted:', formData);
+
+        return (
+            <section id="contact" className="contact-section">
+                <article className="container mt-6">
+                    <h6 className="title has-text-centered is-size-4">Contact Us</h6>
+                    <p className="subtitle has-text-centered is-size-6 mt-3">
+                        Get in touch with us for inquiries and bookings.
+                    </p>
+                </article>
+            </section>     
+        )
       };
     
 }
