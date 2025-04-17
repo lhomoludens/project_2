@@ -8,6 +8,8 @@ import 'bulma/css/bulma.min.css'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Home from './components/Home';
 import Footer from './components/Footer';
+import Contact from './components/Contact';
+import Gallery from './components/Gallery';
 
 function App() {
 
@@ -50,7 +52,8 @@ function App() {
           element={<Home homeCards={homeCards} destinationCards={destinationCards} tourCards={tourCards} />} 
         />
         <Route path="/about" element={<About />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
       <Footer links={socialLinks} year={currentYear} />
     </Router>
