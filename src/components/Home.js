@@ -1,5 +1,6 @@
 import React from "react";
 import 'bulma/css/bulma.min.css';
+import { Link } from "react-router-dom";
 
 const Home = ({ homeCards, destinationCards, tourCards }) => {
     return (
@@ -27,12 +28,9 @@ const Home = ({ homeCards, destinationCards, tourCards }) => {
                         {item.title}
                       </p>
                       <div className="buttons is-justify-content-center">
-                        <a
-                          href="contact.html"
-                          className="button is-link is-responsive is-rounded is-outlined"
-                        >
-                          View
-                        </a>
+                        <Link className="button is-link is-responsive is-rounded is-outlined" to="/contact">View</Link>
+
+                        
                       </div>
                     </div>
                   </div>
